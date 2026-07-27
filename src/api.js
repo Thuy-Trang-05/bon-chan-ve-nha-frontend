@@ -10,7 +10,8 @@
  * (không còn là máy cá nhân nữa), chỉ cần đổi đúng 1 dòng này.
  */
 
-export const DIA_CHI_BACKEND = `http://${window.location.hostname}:8000`;
+export const DIA_CHI_BACKEND =
+  import.meta.env.VITE_API_URL || `http://${window.location.hostname}:8000`;
 
 const KHOA_LUU_TOKEN = "bon_chan_ve_nha_token";
 
